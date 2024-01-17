@@ -10,8 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
+    "formik": "^2.4.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-slick": "^0.29.0",
+    "react-spring": "^9.7.3",
+    "react-tooltip": "^5.25.2",
+    "slick-carousel": "^1.8.1",
+    "yup-schema": "^1.0.0-alpha.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

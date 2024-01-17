@@ -1,0 +1,16 @@
+.footer {
+    border-top: 1px solid var(--contact-border);;
+}
+
+.inner {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.inner div {
+    color: var(--grey);
+    font-weight: 200;
+}

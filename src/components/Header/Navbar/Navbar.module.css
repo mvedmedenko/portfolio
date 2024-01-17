@@ -1,0 +1,58 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    z-index: 25;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.item:not(:last-child) {
+    margin-right: 35px;
+    transition: .4s;
+}
+
+.item:hover {
+    color: var(--green);
+    transition: .4s;
+}
+
+@-webkit-keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-500%);
+        transform: translateY(-500%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-500%);
+        transform: translateY(-500%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}

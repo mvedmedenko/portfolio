@@ -1,0 +1,113 @@
+.contact_form {
+    width: 100%;
+    position: relative;
+}
+
+.inner {
+    width: 100%;
+    height: 493px;
+    background-color: #171717;
+    border-radius: 24px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.form {
+    display: grid;
+    z-index: 23;
+}
+
+.form_title {
+    margin-bottom: 32px;
+    font-size: 30px;
+}
+
+.input {
+    height: 60px;
+    background-color: rgb(0, 255, 56, 5%);
+    border: 1px solid var(--green);
+    padding-left: 24px;
+    font-size: 16px;
+    color: #fff;
+    outline-color: #fff;
+    margin-bottom: 20px;
+}
+
+.green_element {
+    background-image: url("../../../assets/images/bg/contactGreenElement.png");
+    background-repeat: none;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    z-index: 2;
+    border-radius: 0px 24px 24px 0px;
+    pointer-events: none;
+    animation: blinkBox 3s ease-in-out infinite;
+}
+
+.input::placeholder {
+    font-size: 14px;
+    color: #fff;
+}
+
+.textarea {
+    height: 126px;
+    background-color: rgb(0, 255, 56, 5%);
+    border: 1px solid var(--green);
+    padding-left: 24px;
+    font-size: 16px;
+    color: #fff;
+    padding-top: 22px;
+    outline-color: #fff;
+    resize: none;
+}
+
+.textarea::placeholder {
+    font-size: 14px;
+    color: #fff;
+}
+
+.send_btn {
+    width: 100%;
+    height: 59px;
+    border: 1px solid var(--green);
+    color: #000;
+    background-color: var(--green);
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    transition: .4s;
+    outline-color: #fff;
+}
+
+.send_btn:hover {
+    background-color: rgb(0, 255, 56, .3);
+    color: var(--green);
+    border: 1px solid var(--green);
+    transition: .4s;
+}
+
+.error_border {
+    border: 1px solid red;
+}
+
+
+
+
+@keyframes blinkBox {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .4;
+    }
+}

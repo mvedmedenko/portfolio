@@ -351,3 +351,23 @@
   [hidden] {
     display: none;
   }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
