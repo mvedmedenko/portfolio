@@ -64,3 +64,39 @@
 .img_box img {
     margin-left: auto;
 }
+
+@media only screen and (max-width: 985px) {
+    .img_box img {
+        display: none;
+    }
+
+    .inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media only screen and (max-width: 775px) {
+    .button_box {
+        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .description p:last-child {
+        display: none;
+    }
+
+    .github_btn {
+        width: 100%;
+    }
+
+    .visit_btn {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        max-height: 110px;
+    }
+  }

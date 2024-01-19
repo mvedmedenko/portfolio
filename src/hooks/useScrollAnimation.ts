@@ -25,5 +25,5 @@ export const useScrollAnimation = (ref, elementClass, animationClass) => {
     };
   }, [animated, ref]);
 
-  return cx(elementClass, { [animationClass]: animated });
+  return {animationClass: cx(elementClass, { [animationClass]: animated }), isAnimated: animated,};
 };

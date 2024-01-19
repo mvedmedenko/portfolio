@@ -6,7 +6,7 @@ import Test from './Projects/Test/Test';
 import prevArrow from '../../assets/images/prevArrow.svg';
 import nextArrow from '../../assets/images/nextArrow.svg';
 import { useRef } from 'react';
-import { useScrollAnimation } from '../../assets/hooks/useScrollAnimation';
+import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
 const CustomPrevArrow = (props: any) => (
 
@@ -51,12 +51,12 @@ const CustomPrevArrow = (props: any) => (
         <div className="container">
           <div className={s.inner}>
             <div className={s.title_box}>
-              <div ref={titleRef} className={sectionAnimationClass}>/04</div>
-              <div ref={titleRef} className={titleAnimationClass}>PORTFOLIO</div>
+              <div ref={titleRef} className={`${s.section_number} ${sectionAnimationClass.animationClass}`}>/04</div>
+              <div ref={titleRef} className={`${s.title} ${titleAnimationClass.animationClass}`}>PORTFOLIO</div>
             </div>
             <div className={s.portfolio_box}>
               <div className={s.box_green_element}>
-                <div ref={sliderRef} className={sliderAnimationClass}>
+                <div ref={sliderRef} className={`${s.slider_box} ${sliderAnimationClass.animationClass}`}>
                   <Slider {...settings} className={s.slider}>
                     <Test />
                     <Test />

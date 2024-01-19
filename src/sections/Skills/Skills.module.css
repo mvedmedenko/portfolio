@@ -1,4 +1,5 @@
 .skills {
+  margin-top: 250px;
   max-height: 800px;
   padding-top: 70px;
   position: relative;
@@ -42,11 +43,13 @@
 }
 
 .title {
-  font-size: 45px;
-  font-weight: 900;
+  display: none;
 }
 
 .animate_title {
+  display: block;
+  font-size: 45px;
+  font-weight: 900;
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
   -webkit-animation-duration: 1s;
@@ -56,11 +59,13 @@
 }
 
 .section_number {
-  color: var(--green);
-  position: relative;
+  display: none;
 }
 
 .animate_section {
+  display: block;
+  color: var(--green);
+  position: relative;
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
   -webkit-animation-duration: 1s;
@@ -96,7 +101,12 @@
   align-items: center;
 }
 
+.react {
+  display: none;
+}
+
 .animate_react {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -107,7 +117,12 @@
   -webkit-animation-delay: .75s;
 }
 
+.redux {
+  display: none;
+}
+
 .animate_redux {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -118,7 +133,12 @@
   -webkit-animation-delay: 1s;
 }
 
+.javascript {
+  display: none;
+}
+
 .animate_javascript {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -128,7 +148,13 @@
   animation-delay: 1.25s;
   -webkit-animation-delay: 1.25s;
 }
+
+.typescript {
+  display: none;
+}
+
 .animate_typescript {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -138,7 +164,13 @@
   animation-delay: 1.5s;
   -webkit-animation-delay: 1.5s;
 }
+
+.one {
+  display: none;
+}
+
 .animate_one {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -148,7 +180,13 @@
   animation-delay: 1.75s;
   -webkit-animation-delay: 1.75s;
 }
+
+.two {
+  display: none;
+}
+
 .animate_two {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -158,7 +196,11 @@
   animation-delay: 2s;
   -webkit-animation-delay: 2s;
 }
+.three {
+  display: none;
+}
 .animate_three {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -168,7 +210,12 @@
   animation-delay: 2.25s;
   -webkit-animation-delay: 2.25s;
 }
+
+.four {
+  display: none;
+}
 .animate_four {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -178,7 +225,13 @@
   animation-delay: 2.5s;
   -webkit-animation-delay: 2.5s;
 }
+
+.five {
+  display: none;
+}
+
 .animate_five {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -188,7 +241,13 @@
   animation-delay: 2.75s;
   -webkit-animation-delay: 2.75s;
 }
+
+.six {
+  display: none;
+}
+
 .animate_six {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -198,7 +257,13 @@
   animation-delay: 3s;
   -webkit-animation-delay: 3s;
 }
+
+.seven {
+  display: none;
+}
+
 .animate_seven {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -208,7 +273,13 @@
   animation-delay: 3.25s;
   -webkit-animation-delay: 3.25s;
 }
+
+.eight {
+  display: none;
+}
+
 .animate_eight {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -218,7 +289,13 @@
   animation-delay: 3.5s;
   -webkit-animation-delay: 3.5s;
 }
+
+.nine {
+  display: none;
+}
+
 .animate_nine {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -228,7 +305,14 @@
   animation-delay: 3.75s;
   -webkit-animation-delay: 3.75s;
 }
+
+.ten {
+  display: none;
+}
+
+
 .animate_ten {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -238,7 +322,14 @@
   animation-delay: 4s;
   -webkit-animation-delay: 4s;
 }
+
+.eleven {
+  display: none;
+}
+
+
 .animate_eleven {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -248,7 +339,12 @@
   animation-delay: 4.25s;
   -webkit-animation-delay: 4.25s;
 }
+
+.twelve {
+  display: none;
+}
 .animate_twelve {
+  display: block;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -343,5 +439,149 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+
+@media only screen and (max-width: 775px) {
+  .grid_container_main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    margin-bottom: 110px;
+  }
+  
+  .grid_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 110px;
+  }
+
+  .inner {
+    height: 100%;
+  }
+
+  .skills {
+    margin-bottom: 245px;
+  }
+
+  .green_element {
+    top: 80%;
+  }
+
+}
+
+@media only screen and (max-width: 744px) {
+  .title {
+    font-size: 26px;
+    margin-top: 10px;
+  }
+
+  .inner {
+    padding: 20px 0px;
+  }
+
+  .title_box {
+    display: block;
+    padding-left: 20px;
+  }
+
+  .grid_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 50px;
+  }
+
+  .section_number::after {
+    content: " ";
+    width: 135px;
+    background-color: var(--green);
+    height: 2px;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .skills {
+    margin-bottom: 40px;
+  }
+
+  .typescript {
+    width: 150px;
+  }
+
+  .javascript {
+    width: 75px;
+    height: 75px;
+  }
+
+  .react {
+    width: 75px;
+    height: 75px;
+  }
+
+  .redux {
+    width: 75px;
+    height: 75px;
+  }
+
+  .grid_container_main {
+    margin-bottom: 100px;
+  }
+
+  .one {
+    width: 60px;
+    height: 60px;
+  }
+  .two {
+    width: 60px;
+    height: 60px;
+  }
+  .three {
+    width: 60px;
+    height: 60px;
+  }
+  .four {
+    width: 60px;
+    height: 60px;
+  }
+  .five {
+    width: 60px;
+    height: 60px;
+  }
+  .six {
+    width: 60px;
+    height: 60px;
+  }
+  .seven {
+    width: 60px;
+    height: 60px;
+  }
+  .eight {
+    width: 60px;
+    height: 60px;
+  }
+  .nine {
+    width: 60px;
+    height: 60px;
+  }
+  .ten {
+    width: 60px;
+    height: 60px;
+  }
+  .eleven {
+    width: 60px;
+    height: 60px;
+  }
+  .twelve {
+    width: 60px;
+    height: 60px;
   }
 }

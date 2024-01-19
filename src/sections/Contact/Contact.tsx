@@ -4,7 +4,7 @@ import locationIcon from "../../assets/images/location.svg"
 import mailIcon from "../../assets/images/mail.svg"
 import { Tooltip } from "react-tooltip"
 import { useRef } from "react"
-import { useScrollAnimation } from "../../assets/hooks/useScrollAnimation"
+import { useScrollAnimation } from "../../hooks/useScrollAnimation"
 
 const Contact = () => {
 
@@ -12,7 +12,7 @@ const Contact = () => {
     const formRef = useRef(null);
 
     const sectionAnimationClass = useScrollAnimation(titleRef, s.section_number, s.animate_section);
-    const titleAnimationClass = useScrollAnimation(titleRef, s.title, s.animate_title);
+    const titleAnimationClass = useScrollAnimation(formRef, s.title, s.animate_title);
     const formAnimationClass = useScrollAnimation(formRef, s.form, s.animate_form);
     const contactAnimationClass = useScrollAnimation(formRef, s.contact_box, s.animate_contact);
 
@@ -21,14 +21,14 @@ const Contact = () => {
             <div className="container">
                 <div className={s.inner}>
                     <div className={s.title_box}>
-                        <div ref={titleRef} className={sectionAnimationClass}>/05</div>
-                        <div ref={titleRef} className={titleAnimationClass}>CONTACT</div>
+                        <div ref={titleRef} className={`${s.section_number} ${sectionAnimationClass.animationClass}`}>/05</div>
+                        <div ref={titleRef} className={`${s.title} ${titleAnimationClass.animationClass}`}>CONTACT</div>
                     </div>
                     <div className={s.grid_container}>
-                        <div ref={formRef} className={formAnimationClass}>
+                        <div ref={formRef} className={`${s.form} ${formAnimationClass.animationClass}`}>
                             <ContactForm />
                         </div>
-                        <div ref={formRef} className={contactAnimationClass}>
+                        <div ref={formRef} className={`${s.contact_box} ${contactAnimationClass.animationClass}`}>
                             <div className={s.location_box}>
                                 <div className={s.country_box}>
                                     <div><img src={locationIcon} alt="" /></div>
