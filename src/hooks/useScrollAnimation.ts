@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import cx from "classnames";
 
-export const useScrollAnimation = (ref, elementClass, animationClass) => {
+export const useScrollAnimation = (ref: any, elementClass: any, animationClass: any) => {
   const [animated, setAnimated] = useState(false);
 
   useEffect(() => {
