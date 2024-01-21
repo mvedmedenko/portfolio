@@ -154,6 +154,10 @@ select:-webkit-autofill {
   padding: 0px 20px
 }
 
+body {
+  overflow-x: none;
+}
+
 
 
 

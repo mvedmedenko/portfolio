@@ -6,8 +6,9 @@ import { Tooltip } from "react-tooltip"
 
 const Contact = () => {
 
+
     return (
-        <section className={s.contact}>
+        <section id="contact" className={s.contact}>
             <div className="container">
                 <div className={s.inner}>
                     <div className={s.title_box}>
@@ -21,12 +22,11 @@ const Contact = () => {
                             data-aos-duration="1000"
                             className={s.title}>CONTACT</div>
                     </div>
-                    <div
-                        data-aos="fade-right"
-                        data-aos-duration="1000"
-                        className={s.grid_container}
-                    >
-                        <div className={s.form}>
+                    <div className={s.grid_container}>
+                        <div
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                            className={s.form}>
                             <ContactForm />
                         </div>
                         <div

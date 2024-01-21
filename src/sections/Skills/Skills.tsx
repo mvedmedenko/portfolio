@@ -9,7 +9,7 @@ import { Tooltip } from "react-tooltip";
 const Skills = () => {
 
     return (
-        <section className={s.skills}>
+        <section id="skills" className={s.skills}>
             <div className="container">
                 <div className={s.inner}>
                     <div className={s.title_box}>

@@ -6,7 +6,7 @@ const About = () => {
 
 
   return (
-    <section className={s.about}>
+    <section id="about" className={s.about}>
       <div className="container">
         <div className={s.inner}>
           <div>

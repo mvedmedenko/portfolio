@@ -1,10 +1,12 @@
 import Header from "../../components/Header/Header";
 import s from "./Home.module.css";
 
+
 const Home = () => {
 
+
     return (
-        <section className={s.home}>
+        <section id="home" className={s.home}>
                 <div>
                     <Header />
                 </div>

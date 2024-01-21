@@ -39,7 +39,7 @@ const Portfolio = () => {
 
 
   return (
-    <section className={s.portfolio}>
+    <section id='portfolio' className={s.portfolio}>
       <div className="container">
         <div className={s.inner}>
           <div className={s.title_box}>
@@ -61,11 +61,13 @@ const Portfolio = () => {
               data-aos-duration="1000"
                className={s.slider_box}
                >
-                <Slider {...settings} className={s.slider}>
+                <div className={s.slider}>
+                <Slider {...settings}>
                   <Test />
                   <Test />
                   <Test />
                 </Slider>
+                </div>
               </div>
             </div>
           </div>
