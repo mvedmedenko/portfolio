@@ -33,25 +33,9 @@
   font-weight: 900;
 }
 
-.animate_title {
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
 .section_number {
   color: var(--green);
   position: relative;
-}
-
-.animate_section {
-  -webkit-animation-name: slideInLeft;
-  animation-name: slideInLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
 }
 
 .section_number::after {
@@ -76,12 +60,6 @@
   font-weight: 400;
 }
 
-.animate_subtitle {
-  -webkit-animation: slide-in-elliptic-left-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-in-elliptic-left-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation-delay: .3s;
-  -webkit-animation-delay: .3s;
-}
 
 .text {
   font-size: 16px;
@@ -103,165 +81,10 @@
   font-weight: 200;
 }
 
-.animate_completed {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-}
-
-.animate_experience {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animanimate_ation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-delay: 2.25s;
-  -webkit-animation-delay: 2.25s;
-}
-
-.animate_reviews {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-delay: 2.5s;
-  -webkit-animation-delay: 2.5s;
-}
 
 
 
 
-
-
-
-
-@keyframes blink {
-
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: .6;
-  }
-}
-
-@-webkit-keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    visibility: visible;
-  }
-
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    visibility: visible;
-  }
-
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes slideInLeft {
-  0% {
-    -webkit-transform: translateX(-500%);
-    transform: translateX(-500%);
-    visibility: visible;
-  }
-
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInLeft {
-  0% {
-    -webkit-transform: translateX(-500%);
-    transform: translateX(-500%);
-    visibility: visible;
-  }
-
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes slide-in-elliptic-left-fwd {
-  0% {
-    -webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
-    transform: translateX(-800px) rotateY(30deg) scale(0);
-    -webkit-transform-origin: -100% 50%;
-    transform-origin: -100% 50%;
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateX(0) rotateY(0) scale(1);
-    transform: translateX(0) rotateY(0) scale(1);
-    -webkit-transform-origin: 1800px 50%;
-    transform-origin: 1800px 50%;
-    opacity: 1;
-  }
-}
-
-@keyframes slide-in-elliptic-left-fwd {
-  0% {
-    -webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
-    transform: translateX(-800px) rotateY(30deg) scale(0);
-    -webkit-transform-origin: -100% 50%;
-    transform-origin: -100% 50%;
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateX(0) rotateY(0) scale(1);
-    transform: translateX(0) rotateY(0) scale(1);
-    -webkit-transform-origin: 1800px 50%;
-    transform-origin: 1800px 50%;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 @media only screen and (max-width: 945px) {
   .title {
@@ -292,6 +115,7 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
 
   .title {
     font-size: 26px;
