@@ -74,15 +74,10 @@
 }
 
 .slider_box {
-    padding-top: 58px;
-    padding-left: 58px;
-    padding-right: 58px;
-    height: 375px;
+    padding: 0px 20px;
+    height: 433px;
 }
 
-.slider {
-    position: relative;
-}
 
 .custom_arrow {
     position: absolute;
@@ -93,12 +88,12 @@
 
 .prev_arrow {
     left: -75px;
-    top: 40%;
+    top: 45%;
 }
 
 .next_arrow {
     right: -75px;
-    top: 40%;
+    top: 45%;
 }
 
 
@@ -128,10 +123,6 @@
   
     .achive_text {
       font-size: 40px;
-    }
-    
-    .slider_box {
-        padding-top: 78px;
     }
 
     .prev_arrow {
@@ -164,10 +155,6 @@
       .title {
         font-size: 26px;
         margin-top: 10px;
-      }
-
-      .slider_box {
-        padding: 20px;
       }
 
       .prev_arrow {

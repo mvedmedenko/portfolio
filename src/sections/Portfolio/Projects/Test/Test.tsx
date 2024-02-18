@@ -5,7 +5,7 @@ import projectImg from "../../../../assets/images/projects/test/project.png"
 
 const Test = () => {
     return (
-        <div className={s.text}>
+        <div className={s.test}>
             <div className={s.inner}>
                 <div>
                     <div className={s.title}>01/ OMEX</div>

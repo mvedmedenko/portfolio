@@ -52,21 +52,21 @@ const Portfolio = () => {
               data-aos="fade-right"
               data-aos-duration="1000"
               className={s.title}
-              >PORTFOLIO</div>
+            >PORTFOLIO</div>
           </div>
           <div className={s.portfolio_box}>
             <div className={s.box_green_element}>
               <div
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-               className={s.slider_box}
-               >
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                className={s.slider_box}
+              >
                 <div className={s.slider}>
-                <Slider {...settings}>
-                  <Test />
-                  <Test />
-                  <Test />
-                </Slider>
+                  <Slider {...settings}>
+                    <Test />
+                    <Test />
+                    <Test />
+                  </Slider>
                 </div>
               </div>
             </div>

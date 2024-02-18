@@ -2,6 +2,7 @@
     z-index: 56;
     display: flex;
     justify-content: center;
+    max-width: 100%;
 }
 
 .navbar_scrolled {
@@ -358,5 +359,11 @@
 
     .changed_bar3 {
         transform: translateY(-6px) rotateZ(45deg);
+    }
+}
+
+@media only screen and (max-width: 1324px) {
+    span {
+        display: none;
     }
 }

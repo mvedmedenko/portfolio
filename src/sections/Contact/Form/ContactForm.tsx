@@ -29,7 +29,7 @@ const ContactForm = () => {
     return (
         <div className={s.contact_form}>
             <div className={s.inner}>
-                <div className={s.form_title}>CONTACT WITH ME</div>
+                <div className={s.form_title}>CONTACT ME</div>
             <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}

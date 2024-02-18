@@ -39,7 +39,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className={scrollY > 100 && window.innerWidth > 775 ? s.navbar_scrolled : s.navbar}>
+        <nav className={scrollY > 100 && window.innerWidth > 744 ? s.navbar_scrolled : s.navbar}>
             <div className={menuOpen ? s.menuBg : ''}></div>
             <div className={s.menuBar} onClick={hamburgerHandler}>
                 <div className={menuOpen ? s.changed_bar1 : s.bar1}></div>

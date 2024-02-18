@@ -3,7 +3,18 @@ import reactIcon from "../../assets/images/skillsIcons/react.svg"
 import reduxIcon from "../../assets/images/skillsIcons/redux.svg"
 import jsIcon from "../../assets/images/skillsIcons/js.svg"
 import tsIcon from "../../assets/images/skillsIcons/ts.svg"
-import bootstrapIcon from "../../assets/images/skillsIcons/bootstrap.svg"
+import htmlIcon from "../../assets/images/skillsIcons/html5.svg"
+import cssIcon from "../../assets/images/skillsIcons/css3.svg"
+import materialUiIcon from "../../assets/images/skillsIcons/materialUi.svg"
+import tailwwindIcom from "../../assets/images/skillsIcons/tailwind.svg"
+import tddIcon from "../../assets/images/skillsIcons/tdd.svg"
+import nmpIcon from "../../assets/images/skillsIcons/npm.svg"
+import yarnIcon from "../../assets/images/skillsIcons/yarn.svg"
+import storybookIcon from "../../assets/images/skillsIcons/storybook.svg"
+import gitIcon from "../../assets/images/skillsIcons/git.svg"
+import restApiIcon from "../../assets/images/skillsIcons/restApi.svg"
+import axiosIcon from "../../assets/images/skillsIcons/axios.svg"
+import sassIcon from "../../assets/images/skillsIcons/sass.svg"
 import { Tooltip } from "react-tooltip";
 
 const Skills = () => {
@@ -41,7 +52,7 @@ const Skills = () => {
                         >
                             <a id="redux"><img className={s.redux} src={reduxIcon} alt="IMG" /></a>
                             <Tooltip anchorSelect="#redux" clickable>
-                                REDUX
+                                REDUX / RTK QUERY / REDUX TOOLKIT
                             </Tooltip>
                         </div>
                         <div
@@ -71,118 +82,118 @@ const Skills = () => {
                             data-aos-delay="1000"
                             className={s.item}
                         >
-                            <a id="bootstrap"><img className={s.one} src={bootstrapIcon} alt="IMG" /></a>
-                            <Tooltip anchorSelect="#bootstrap" clickable>
-                                BOOTSTRAP
+                            <a id="html5"><img width="80px" height="64px" className={s.html5} src={htmlIcon} alt="IMG" /></a>
+                            <Tooltip anchorSelect="#html5" clickable>
+                                HTML5
                             </Tooltip>
                         </div>
                         <div
                             data-aos="zoom-in"
-                            data-aos-delay="1100"
+                            data-aos-delay="1000"
                             className={s.item}
                         >
-                            <a id="bootstrap"><img className={s.two} src={bootstrapIcon} alt="IMG" /></a>
-                            <Tooltip anchorSelect="#bootstrap" clickable>
-                                BOOTSTRAP
+                            <a id="css3"><img width="80px" height="64px" className={s.css3} src={cssIcon} alt="IMG" /></a>
+                            <Tooltip anchorSelect="#css3" clickable>
+                                CSS3
                             </Tooltip>
                         </div>
                         <div
                             data-aos="zoom-in"
-                            data-aos-delay="1200"
+                            data-aos-delay="1000"
                             className={s.item}
                         >
-                            <a id="bootstrap"><img className={s.three} src={bootstrapIcon} alt="IMG" /></a>
-                            <Tooltip anchorSelect="#bootstrap" clickable>
-                                BOOTSTRAP
+                            <a id="materialui"><img width="80px" height="64px" className={s.materialui} src={materialUiIcon} alt="IMG" /></a>
+                            <Tooltip anchorSelect="#materialui" clickable>
+                                MATERIAL UI
                             </Tooltip>
                         </div>
                         <div
                             data-aos="zoom-in"
-                            data-aos-delay="1300"
+                            data-aos-delay="1000"
                             className={s.item}>
-                            <a id="bootstrap"><img className={s.four} src={bootstrapIcon} alt="IMG" /></a>
-                            <Tooltip anchorSelect="#bootstrap" clickable>
-                                BOOTSTRAP
-                            </Tooltip>
+                            <a id="tailwind"><img width="80px" height="64px" className={s.tailwind} src={tailwwindIcom} alt="IMG" /></a>
+                            <Tooltip anchorSelect="#tailwind" clickable>
+                                TAILWIND
+                            </Tooltip> 
                         </div>
                         <div
                             data-aos="zoom-in"
-                            data-aos-delay="1400"
+                            data-aos-delay="1000"
                             className={s.item}
                         >
-                            <a id="bootstrap"><img className={s.five} src={bootstrapIcon} alt="IMG" /></a>
-                            <Tooltip anchorSelect="#bootstrap" clickable>
-                                BOOTSTRAP
+                            <a id="npm"><img width="80px" height="64px" className={s.npm} src={nmpIcon} alt="IMG" /></a>
+                            <Tooltip anchorSelect="#npm" clickable>
+                                NPM
                             </Tooltip>
                         </div>
                         <div
                             data-aos="zoom-in"
-                            data-aos-delay="1500"
+                            data-aos-delay="1000"
                             className={s.item}
                         >
-                            <a id="bootstrap"><img className={s.six} src={bootstrapIcon} alt="IMG" /></a>
-                            <Tooltip anchorSelect="#bootstrap" clickable>
-                                BOOTSTRAP
+                            <a id="yarn"><img width="80px" height="64px" className={s.yarn} src={yarnIcon} alt="IMG" /></a>
+                            <Tooltip anchorSelect="#yarn" clickable>
+                                YARN
                             </Tooltip>
                         </div>
                         <div
                             data-aos="zoom-in"
-                            data-aos-delay="1600"
+                            data-aos-delay="1000"
                             className={s.item}
                         >
-                            <a id="bootstrap"><img className={s.seven} src={bootstrapIcon} alt="IMG" /></a>
-                            <Tooltip anchorSelect="#bootstrap" clickable>
-                                BOOTSTRAP
+                            <a id="storybook"><img width="80px" height="64px" className={s.storybook} src={storybookIcon} alt="IMG" /></a>
+                            <Tooltip anchorSelect="#storybook" clickable>
+                                STORYBOOK
                             </Tooltip>
                         </div>
                         <div
                             data-aos="zoom-in"
-                            data-aos-delay="1700"
+                            data-aos-delay="1000"
                             className={s.item}
                         >
-                            <a id="bootstrap"><img className={s.eight} src={bootstrapIcon} alt="IMG" /></a>
-                            <Tooltip anchorSelect="#bootstrap" clickable>
-                                BOOTSTRAP
+                            <a id="git"><img width="80px" height="64px" className={s.git} src={gitIcon} alt="IMG" /></a>
+                            <Tooltip anchorSelect="#git" clickable>
+                                GIT
                             </Tooltip>
                         </div>
                         <div
                             data-aos="zoom-in"
-                            data-aos-delay="1800"
+                            data-aos-delay="1000"
                             className={s.item
                             }>
-                            <a id="bootstrap"><img className={s.nine} src={bootstrapIcon} alt="IMG" /></a>
-                            <Tooltip anchorSelect="#bootstrap" clickable>
-                                BOOTSTRAP
+                            <a id="restapi"><img width="80px" height="64px" className={s.restapi} src={restApiIcon} alt="IMG" /></a>
+                            <Tooltip anchorSelect="#restapi" clickable>
+                                REST API
                             </Tooltip>
                         </div>
                         <div
                             data-aos="zoom-in"
-                            data-aos-delay="1900"
+                            data-aos-delay="1000"
                             className={s.item}
                         >
-                            <a id="bootstrap"><img className={s.ten} src={bootstrapIcon} alt="IMG" /></a>
-                            <Tooltip anchorSelect="#bootstrap" clickable>
-                                BOOTSTRAP
+                            <a id="axios"><img width="80px" height="64px" className={s.axios} src={axiosIcon} alt="IMG" /></a>
+                            <Tooltip anchorSelect="#axios" clickable>
+                                AXIOS
                             </Tooltip>
                         </div>
                         <div
                             data-aos="zoom-in"
-                            data-aos-delay="2000"
+                            data-aos-delay="1000"
                             className={s.item}
                         >
-                            <a id="bootstrap"><img className={s.eleven} src={bootstrapIcon} alt="IMG" /></a>
-                            <Tooltip anchorSelect="#bootstrap" clickable>
-                                BOOTSTRAP
+                            <a id="sass"><img width="80px" height="64px" className={s.sass} src={sassIcon} alt="IMG" /></a>
+                            <Tooltip anchorSelect="#sass" clickable>
+                                SASS
                             </Tooltip>
                         </div>
                         <div
                             data-aos="zoom-in"
-                            data-aos-delay="2100"
+                            data-aos-delay="1000"
                             className={s.item}
                         >
-                            <a id="bootstrap"><img className={s.twelve} src={bootstrapIcon} alt="IMG" /></a>
-                            <Tooltip anchorSelect="#bootstrap" clickable>
-                                BOOTSTRAP
+                            <a id="tdd"><img width="80px" height="64px" className={s.tdd} src={tddIcon} alt="IMG" /></a>
+                            <Tooltip anchorSelect="#tdd" clickable>
+                                UNIT TESTS
                             </Tooltip>
                         </div>
                     </div>
