@@ -49,15 +49,11 @@
   transform: translateY(-50%);
 }
 
-.grid_container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
 
 .subtitle {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
+  margin-bottom: 40px;
 }
 
 
@@ -65,22 +61,12 @@
   font-size: 16px;
   font-weight: 200;
   color: var(--grey);
+  line-height: 40px;
 }
 
 .subtitle_box {
   margin-bottom: 65px;
 }
-
-.achiev_title {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.achiev_text {
-  font-size: 80px;
-  font-weight: 200;
-}
-
 
 
 

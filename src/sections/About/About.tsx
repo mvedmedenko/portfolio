@@ -29,45 +29,20 @@ const About = () => {
               <h2
                 data-aos="zoom-in-right"
                 className={s.subtitle}
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              >
+                Maksym Vedmedenko | Front-End Developer
               </h2>
               <div
                 data-aos="zoom-in-right"
                 data-aos-duration="1000"
                 className={s.text}
               >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Eum temporibus ipsum mollitia aliquid quas voluptatibus facere, dolor odio officiis id distinctio!
-                Accusamus facilis illo commodi sunt asperiores! Necessitatibus, quaerat veniam.
-              </div>
-            </div>
-            <div className={s.grid_container}>
-              <div
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="500"
-                data-aos-offset="0"
-                className={s.completed_work}>
-                <div className={s.achiev_title}>succesfully completed work and <br /> sutisfied customers</div>
-                <div className={s.achiev_text}>500+</div>
-              </div>
-              <div
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="1000"
-                data-aos-offset="0"
-                className={s.experience}>
-                <div className={s.achiev_title}>yearn of continious training and <br /> work experience</div>
-                <div className={s.achiev_text}>8</div>
-              </div>
-              <div
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="1500"
-                data-aos-offset="0"
-                className={s.reviews}>
-                <div className={s.achiev_title}>reviews about my work</div>
-                <div className={s.achiev_text}>380</div>
+                I am an individual with a strong passion for programming.
+                I embarked on my journey in web development on my own in May 2021 and have been dedicatedly learning new technologies every day since.
+                I have hands-on experience in developing Single Page Applications (SPAs) using React, Redux, and TypeScript. Currently,
+                I am actively enhancing my skills in this domain and broadening my experience with emerging technologies.
+                My future plans include delving deeper into React, Angular, venturing into server-side development,
+                and eventually mastering another programming language.
               </div>
             </div>
           </div>
