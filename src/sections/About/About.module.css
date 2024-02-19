@@ -128,4 +128,8 @@
   .grid_cintainer {
     column-gap: 10px;
   }
+
+  .text {
+    line-height: 20px;
+  }
 }
