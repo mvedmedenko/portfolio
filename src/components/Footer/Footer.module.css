@@ -15,6 +15,14 @@
     font-weight: 200;
 }
 
+.privacy_text {
+    cursor: pointer;
+}
+
+.privacy_text:hover {
+    color: var(--green);
+}
+
 
 @media only screen and (max-width: 775px) {
     .inner div {

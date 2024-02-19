@@ -39,7 +39,8 @@
     opacity: .9;
     z-index: 25;
     font-weight: 700;
-    display: flex;
+    align-items: center;
+    text-align: center;
     list-style-type: none;
     transition: 1s;
 }
@@ -263,6 +264,12 @@
     }
 }
 
+@media only screen and (max-width: 1020px) {
+    .list_scrolled {
+        width: 600px;
+    }
+}
+
 @media only screen and (max-width: 744px) {
 
     .list {
@@ -312,6 +319,7 @@
         transition: 0.3s ease;
         display: none;
     }
+
 
     .item span {
         display: none;

@@ -2,10 +2,12 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import s from './Portfolio.module.css';
-import Test from './Projects/Test/Test';
+import StussyCopy from './Projects/StussyCopy/StussyCopy';
+import Weather from './Projects/Weather /Weather';
 import prevArrow from '../../assets/images/prevArrow.svg';
 import nextArrow from '../../assets/images/nextArrow.svg';
 import 'aos/dist/aos.css';
+import PortfolioProject from './Projects/PortfolioProject/PortfolioProject';
 
 const CustomPrevArrow = (props: any) => (
 
@@ -63,9 +65,9 @@ const Portfolio = () => {
               >
                 <div className={s.slider}>
                   <Slider {...settings}>
-                    <Test />
-                    <Test />
-                    <Test />
+                    <StussyCopy/>
+                    <Weather/>
+                    <PortfolioProject/>
                   </Slider>
                 </div>
               </div>

@@ -5,18 +5,23 @@ import About from './sections/About/About'
 import Portfolio from './sections/Portfolio/Portfolio'
 import Contact from './sections/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import { useState } from 'react'
+import Privacy from './components/Privacy/Privacy'
 
 function App() {
 
+  const [isPrivacy, setIsPrivacy] = useState<boolean>(false)
+
 
   return (
-    <div>
-      <Home />
+    <div className={!isPrivacy ? "app" : "scroll_off"}>
+      {isPrivacy && <Privacy setIsPrivacy={setIsPrivacy}/>}
+      <Home isPrivacy={isPrivacy}/>
       <Skills />
       <About />
       <Portfolio />
       <Contact />
-      <Footer />
+      <Footer setIsPrivacy={setIsPrivacy}/>
     </div>
   )
 }

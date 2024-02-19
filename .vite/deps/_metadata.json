@@ -1,0 +1,79 @@
+{
+  "hash": "61a97d30",
+  "configHash": "501fba10",
+  "lockfileHash": "58e0a073",
+  "browserHash": "cadf778b",
+  "optimized": {
+    "aos": {
+      "src": "../../node_modules/aos/dist/aos.js",
+      "file": "aos.js",
+      "fileHash": "29c58b5d",
+      "needsInterop": true
+    },
+    "formik": {
+      "src": "../../node_modules/formik/dist/formik.esm.js",
+      "file": "formik.js",
+      "fileHash": "bdebd27b",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "298562c0",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "faa2801c",
+      "needsInterop": true
+    },
+    "react-scroll": {
+      "src": "../../node_modules/react-scroll/modules/index.js",
+      "file": "react-scroll.js",
+      "fileHash": "d76a4a6f",
+      "needsInterop": true
+    },
+    "react-slick": {
+      "src": "../../node_modules/react-slick/lib/index.js",
+      "file": "react-slick.js",
+      "fileHash": "4db47c52",
+      "needsInterop": true
+    },
+    "react-tooltip": {
+      "src": "../../node_modules/react-tooltip/dist/react-tooltip.min.mjs",
+      "file": "react-tooltip.js",
+      "fileHash": "b1e085ef",
+      "needsInterop": false
+    },
+    "yup": {
+      "src": "../../node_modules/yup/es/index.js",
+      "file": "yup.js",
+      "fileHash": "c5553ed0",
+      "needsInterop": false
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "f347841f",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-CMK54ICT": {
+      "file": "chunk-CMK54ICT.js"
+    },
+    "chunk-FBRNPY62": {
+      "file": "chunk-FBRNPY62.js"
+    },
+    "chunk-R4GYP2BA": {
+      "file": "chunk-R4GYP2BA.js"
+    },
+    "chunk-UM3JHGVO": {
+      "file": "chunk-UM3JHGVO.js"
+    },
+    "chunk-CEQRFMJQ": {
+      "file": "chunk-CEQRFMJQ.js"
+    }
+  }
+}

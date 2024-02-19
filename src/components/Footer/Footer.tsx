@@ -1,12 +1,19 @@
 import s from "./Footer.module.css"
 
-const Footer = () => {
+type FooterProps = {
+    setIsPrivacy: (condition: boolean) => void
+}
+
+const Footer = (props: FooterProps) => {
+
+    const year = new Date().getFullYear()
+
     return (
         <footer className={s.footer}>
             <div className="container">
                 <div className={s.inner}>
-                    <div>© Vedmedenko | 2024</div>
-                    <div>Privacy Policy</div>
+                    <div>© Vedmedenko | {year}</div>
+                    <div className={s.privacy_text} onClick={() => props.setIsPrivacy(true)}>Privacy Policy</div>
                 </div>
             </div>
         </footer>
