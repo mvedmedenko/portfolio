@@ -25,7 +25,7 @@ const validationSchema = Yup.object().shape({
 const ContactForm = () => {
 
     const ref = useRef<HTMLFormElement | null>(null);
-    const [sendingFormStatus, setSendingFormStatus] = useState<string>("")
+    const [sendingFormStatus, setSendingFormStatus] = useState<string>("success")
 
     const handleSubmit = () => {
         if (ref.current) {
@@ -89,7 +89,6 @@ const ContactForm = () => {
                     {sendingFormStatus === "success"
                         && (
                             <div className={s.submitted_message}>
-                                Thank you!
                                 Your message is successfully submitted
                             </div>
                         )}
