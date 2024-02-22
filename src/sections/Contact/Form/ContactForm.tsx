@@ -25,7 +25,7 @@ const validationSchema = Yup.object().shape({
 const ContactForm = () => {
 
     const ref = useRef<HTMLFormElement | null>(null);
-    const [sendingFormStatus, setSendingFormStatus] = useState<string>("success")
+    const [sendingFormStatus, setSendingFormStatus] = useState<string>("")
 
     const handleSubmit = () => {
         if (ref.current) {
