@@ -1,29 +1,46 @@
 import s from "./ContactForm.module.css"
 import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
 
 interface FormData {
-    name: string;
-    email: string;
+    to_name: string;
+    from_name: string;
     message: string;
 }
 
 const initialValues: FormData = {
-    name: '',
-    email: '',
+    to_name: '',
+    from_name: '',
     message: ''
 };
 
 const validationSchema = Yup.object().shape({
-    name: Yup.string().required('Name is required'),
-    email: Yup.string().email('Invalid email').required('Email is required'),
+    to_name: Yup.string().required('Name is required'),
+    from_name: Yup.string().email('Invalid email').required('Email is required'),
     message: Yup.string().required('Message is required'),
 });
 
 const ContactForm = () => {
 
-    const handleSubmit = (values: FormData) => {
-        console.log(values)
+    const ref = useRef<HTMLFormElement | null>(null);
+
+    const handleSubmit = () => {
+        if (ref.current) {
+            emailjs
+                .sendForm('service_1dap2zm', 'template_7vkjmy2', ref.current, {
+                    publicKey: 'pnGJA-N4tf0Ejcsts',
+                })
+                .then(
+                    () => {
+                        console.log('SUCCESS!');
+                    },
+                    (error) => {
+                        console.log('FAILED...', error.text);
+                    },
+                );
+        }
     }
 
     return (
@@ -36,18 +53,18 @@ const ContactForm = () => {
                 onSubmit={handleSubmit}
             >
                 {({ isSubmitting, errors, touched }) => (
-                    <Form className={s.form}>
+                    <Form ref={ref} className={s.form}>
                         <Field
-                            name="name"
+                            name="to_name"
                             placeholder="NAME"
-                            className={`${s.input} ${errors.name && touched.name ? s.error_border : ''}`}
+                            className={`${s.input} ${errors.to_name && touched.to_name ? s.error_border : ''}`}
                             type="text"
                         />
                         <Field
                             placeholder="EMAIL"
-                            className={`${s.input} ${errors.email && touched.email ? s.error_border : ''}`}
+                            className={`${s.input} ${errors.from_name && touched.from_name ? s.error_border : ''}`}
                             type="email"
-                            name="email" />
+                            name="from_name" />
 
 
                         <Field
