@@ -2,7 +2,7 @@ import s from "./ContactForm.module.css"
 import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 import emailjs from '@emailjs/browser';
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 interface FormData {
     to_name: string;
@@ -25,6 +25,7 @@ const validationSchema = Yup.object().shape({
 const ContactForm = () => {
 
     const ref = useRef<HTMLFormElement | null>(null);
+    const [sendingFormStatus, setSendingFormStatus] = useState<string>("")
 
     const handleSubmit = () => {
         if (ref.current) {
@@ -34,10 +35,10 @@ const ContactForm = () => {
                 })
                 .then(
                     () => {
-                        console.log('SUCCESS!');
+                        setSendingFormStatus("success")
                     },
-                    (error) => {
-                        console.log('FAILED...', error.text);
+                    () => {
+                        setSendingFormStatus("failed")
                     },
                 );
         }
@@ -47,40 +48,58 @@ const ContactForm = () => {
         <div className={s.contact_form}>
             <div className={s.inner}>
                 <div className={s.form_title}>CONTACT ME</div>
-            <Formik
-                initialValues={initialValues}
-                validationSchema={validationSchema}
-                onSubmit={handleSubmit}
-            >
-                {({ isSubmitting, errors, touched }) => (
-                    <Form ref={ref} className={s.form}>
-                        <Field
-                            name="to_name"
-                            placeholder="NAME"
-                            className={`${s.input} ${errors.to_name && touched.to_name ? s.error_border : ''}`}
-                            type="text"
-                        />
-                        <Field
-                            placeholder="EMAIL"
-                            className={`${s.input} ${errors.from_name && touched.from_name ? s.error_border : ''}`}
-                            type="email"
-                            name="from_name" />
+                <div>
+                    {sendingFormStatus === ""
+                        && (
+                            <Formik
+                                initialValues={initialValues}
+                                validationSchema={validationSchema}
+                                onSubmit={handleSubmit}
+                            >
+                                {({ isSubmitting, errors, touched }) => (
+                                    <Form ref={ref} className={s.form}>
+                                        <Field
+                                            name="to_name"
+                                            placeholder="NAME"
+                                            className={`${s.input} ${errors.to_name && touched.to_name ? s.error_border : ''}`}
+                                            type="text"
+                                        />
+                                        <Field
+                                            placeholder="EMAIL"
+                                            className={`${s.input} ${errors.from_name && touched.from_name ? s.error_border : ''}`}
+                                            type="email"
+                                            name="from_name" />
 
 
-                        <Field
-                            placeholder="MESSAGE"
-                            className={`${s.textarea} ${errors.message && touched.message ? s.error_border : ''}`}
-                            as="textarea"
-                            name="message" />
+                                        <Field
+                                            placeholder="MESSAGE"
+                                            className={`${s.textarea} ${errors.message && touched.message ? s.error_border : ''}`}
+                                            as="textarea"
+                                            name="message" />
 
-                        <div className={s.btn_box}>
-                            <button className={s.send_btn} type="submit" disabled={isSubmitting}>
-                                SEND
-                            </button>
-                        </div>
-                    </Form>
-                )}
-            </Formik>
+                                        <div className={s.btn_box}>
+                                            <button className={s.send_btn} type="submit" disabled={isSubmitting}>
+                                                SEND
+                                            </button>
+                                        </div>
+                                    </Form>
+                                )}
+                            </Formik>
+                        )}
+                    {sendingFormStatus === "success"
+                        && (
+                            <div className={s.submitted_message}>
+                                Thank you!
+                                Your message is successfully submitted
+                            </div>
+                        )}
+                    {sendingFormStatus === "failed"
+                        && (
+                            <div className={s.failed_message}>
+                                Something went wrong, please try again later.
+                            </div>
+                        )}
+                </div>
             </div>
             <div className={s.green_element}></div>
         </div>
