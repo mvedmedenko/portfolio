@@ -30,7 +30,7 @@ const Home = (props: HeaderProps) => {
                         <div className={s.last_name}>VEDMEDENKO</div>
                     </div>
                     <div className={s.button}>
-                        <a target="_blank" href="https://drive.google.com/file/d/1gfraU_JbXMJARQD6HzgkhBzTDhPBSAIL/view?usp=sharing"><button>DOWNLOAD CV</button></a>
+                        <a target="_blank" href="https://drive.google.com/file/d/1aBkWewx1dh_d0r4U17tUW2i_e1QZjpdL/view?usp=sharing"><button>DOWNLOAD CV</button></a>
                     </div>
                 </div>
             </div>

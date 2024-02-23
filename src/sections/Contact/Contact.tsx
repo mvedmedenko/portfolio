@@ -4,6 +4,7 @@ import locationIcon from "../../assets/images/location.svg"
 import mailIcon from "../../assets/images/mail.svg"
 import { Tooltip } from "react-tooltip"
 
+
 const Contact = () => {
 
 
